@@ -1,0 +1,3 @@
+[submodule "submodule/Spring"]
+	path = submodule/Spring
+	url = https://github.com/MengTo/Spring.git
