@@ -14,6 +14,7 @@
 		23816AC91E16C8C900379FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23816AC71E16C8C900379FC2 /* LaunchScreen.storyboard */; };
 		23816AD41E16C8C900379FC2 /* yiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23816AD31E16C8C900379FC2 /* yiTests.swift */; };
 		23816ADF1E16C8C900379FC2 /* yiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23816ADE1E16C8C900379FC2 /* yiUITests.swift */; };
+		23816AED1E16C8E500379FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23816AEC1E16C8E500379FC2 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		23816ADA1E16C8C900379FC2 /* yiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23816ADE1E16C8C900379FC2 /* yiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yiUITests.swift; sourceTree = "<group>"; };
 		23816AE01E16C8C900379FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23816AEC1E16C8E500379FC2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				23816ABE1E16C8C900379FC2 /* AppDelegate.swift */,
 				23816AC01E16C8C900379FC2 /* ViewController.swift */,
+				23816AEC1E16C8E500379FC2 /* main.m */,
 				23816AC21E16C8C900379FC2 /* Main.storyboard */,
 				23816AC51E16C8C900379FC2 /* Assets.xcassets */,
 				23816AC71E16C8C900379FC2 /* LaunchScreen.storyboard */,
@@ -194,6 +197,7 @@
 					23816ABA1E16C8C800379FC2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = WXN2XA3VYP;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					23816ACE1E16C8C900379FC2 = {
@@ -263,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23816AC11E16C8C900379FC2 /* ViewController.swift in Sources */,
+				23816AED1E16C8E500379FC2 /* main.m in Sources */,
 				23816ABF1E16C8C900379FC2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,11 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WXN2XA3VYP;
 				INFOPLIST_FILE = yi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yijian.yi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WXN2XA3VYP;
 				INFOPLIST_FILE = yi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
